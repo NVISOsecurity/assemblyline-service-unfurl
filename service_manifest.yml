@@ -1,0 +1,23 @@
+name: Unfurl
+version: $SERVICE_TAG
+description: Unshorten submitted URL
+
+accepts: code/(html|hta)
+rejects: empty|metadata/.*
+
+stage: CORE
+category: Static Analysis
+
+file_required: true
+timeout: 120
+disable_cache: false
+
+enabled: true
+is_external: true
+licence_count: 0
+
+docker_config:
+  image: x1mus/assemblyline-service-unfurl:$SERVICE_TAG
+  cpu_cores: 1
+  ram_mb: 256
+  allow_internet_access: true
