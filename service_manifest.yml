@@ -17,7 +17,7 @@ is_external: false
 licence_count: 0
 
 docker_config:
-  image: sorakurai/assemblyline-service-unfurl:$SERVICE_TAG
+  image: ghcr.io/nvisosecurity/assemblyline-service-unfurl:$SERVICE_TAG
   cpu_cores: 1
   ram_mb: 256
   allow_internet_access: true
